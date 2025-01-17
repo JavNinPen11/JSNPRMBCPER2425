@@ -13,7 +13,6 @@ namespace ejercicioTelegrama
             char tipoTelegrama = ' ';
             int numPalabras = 0;
             double coste;
-            int num6;
             //Leo el telegrama 
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
