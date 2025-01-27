@@ -29,79 +29,93 @@
         private void InitializeComponent()
         {
             btnCalcularPrecio = new Button();
-            chkUrgente = new CheckBox();
             txtTelegrama = new RichTextBox();
             txtPrecio = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            radioOrdinario = new RadioButton();
+            radioUrgente = new RadioButton();
             SuspendLayout();
             // 
             // btnCalcularPrecio
             // 
-            btnCalcularPrecio.Location = new Point(263, 191);
-            btnCalcularPrecio.Margin = new Padding(3, 2, 3, 2);
+            btnCalcularPrecio.Location = new Point(301, 255);
             btnCalcularPrecio.Name = "btnCalcularPrecio";
-            btnCalcularPrecio.Size = new Size(82, 22);
+            btnCalcularPrecio.Size = new Size(94, 29);
             btnCalcularPrecio.TabIndex = 0;
             btnCalcularPrecio.Text = "Calcular precio";
             btnCalcularPrecio.UseVisualStyleBackColor = true;
             btnCalcularPrecio.Click += btnCalcularPrecio_Click;
             // 
-            // chkUrgente
-            // 
-            chkUrgente.AutoSize = true;
-            chkUrgente.Location = new Point(84, 163);
-            chkUrgente.Name = "chkUrgente";
-            chkUrgente.Size = new Size(68, 19);
-            chkUrgente.TabIndex = 1;
-            chkUrgente.Text = "Urgente";
-            chkUrgente.UseVisualStyleBackColor = true;
-            // 
             // txtTelegrama
             // 
-            txtTelegrama.Location = new Point(75, 41);
+            txtTelegrama.Location = new Point(86, 55);
+            txtTelegrama.Margin = new Padding(3, 4, 3, 4);
             txtTelegrama.Name = "txtTelegrama";
-            txtTelegrama.Size = new Size(270, 116);
+            txtTelegrama.Size = new Size(308, 153);
             txtTelegrama.TabIndex = 2;
             txtTelegrama.Text = "";
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(144, 191);
+            txtPrecio.Location = new Point(165, 255);
+            txtPrecio.Margin = new Padding(3, 4, 3, 4);
             txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(100, 23);
+            txtPrecio.Size = new Size(114, 27);
             txtPrecio.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(78, 12);
+            label1.Location = new Point(89, 16);
             label1.Name = "label1";
-            label1.Size = new Size(35, 15);
+            label1.Size = new Size(45, 20);
             label1.TabIndex = 4;
             label1.Text = "Texto";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(79, 195);
+            label2.Location = new Point(90, 260);
             label2.Name = "label2";
-            label2.Size = new Size(37, 15);
+            label2.Size = new Size(46, 20);
             label2.TabIndex = 5;
             label2.Text = "Coste";
             // 
+            // radioOrdinario
+            // 
+            radioOrdinario.AutoSize = true;
+            radioOrdinario.Location = new Point(86, 215);
+            radioOrdinario.Name = "radioOrdinario";
+            radioOrdinario.Size = new Size(93, 24);
+            radioOrdinario.TabIndex = 6;
+            radioOrdinario.TabStop = true;
+            radioOrdinario.Text = "Ordinario";
+            radioOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // radioUrgente
+            // 
+            radioUrgente.AutoSize = true;
+            radioUrgente.Location = new Point(185, 215);
+            radioUrgente.Name = "radioUrgente";
+            radioUrgente.Size = new Size(83, 24);
+            radioUrgente.TabIndex = 7;
+            radioUrgente.TabStop = true;
+            radioUrgente.Text = "Urgente";
+            radioUrgente.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(441, 265);
+            ClientSize = new Size(504, 353);
+            Controls.Add(radioUrgente);
+            Controls.Add(radioOrdinario);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtPrecio);
             Controls.Add(txtTelegrama);
-            Controls.Add(chkUrgente);
             Controls.Add(btnCalcularPrecio);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -111,10 +125,11 @@
         #endregion
 
         private Button btnCalcularPrecio;
-        private CheckBox chkUrgente;
         private RichTextBox txtTelegrama;
         private TextBox txtPrecio;
         private Label label1;
         private Label label2;
+        private RadioButton radioOrdinario;
+        private RadioButton radioUrgente;
     }
 }
